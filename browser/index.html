@@ -20,6 +20,7 @@
 	<script src="/js/factories/song.js"></script>
 	<script src="/js/factories/artist.js"></script>
 	<script src="/js/states/albumsState.js"></script>
+	<script src="/js/states/artistState.js"></script>
 </head>
 <body ng-app="juke">
 	<div id="main" class="container-fluid">
@@ -28,12 +29,12 @@
 			<sidebar ng-controller="MenuCtrl">
 				<section>
 					<h4 class="playlist-item">
-						<a href="/#/albums">ALBUMS</a>
+						<a ui-sref="albumList">ALBUMS</a>
 					</h4>
 				</section>
 				<section>
 					<h4 class="playlist-item">
-						<a ng-click="viewArtists()" href="#">ARTISTS</a>
+						<a ng-click="viewArtists()" ui-sref="artistList">ARTISTS</a>
 					</h4>
 				</section>
 			</sidebar>

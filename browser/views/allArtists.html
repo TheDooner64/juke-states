@@ -1,0 +1,15 @@
+<div>
+    <h3>Artists</h3>
+    <div class="row">
+        <div ng-repeat="artist in artists" class="col-xs-12" >
+            <a class="thumbnail" ng-click="viewArtists(album._id)" href="#">
+                <img ng-src="{{ album.imageUrl }}">
+                <div class="caption">
+                    <h5>
+                        <span>{{ artist.name }}</span>
+                    </h5>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,7 @@ app.factory('AlbumFactory', function ($http, SongFactory) {
 			return response.data;
 		})
 		.then(function (albums) {
+			console.log(albums[1]._id);
 			return albums.map(AlbumFactory.convert);
 		});
 	};
